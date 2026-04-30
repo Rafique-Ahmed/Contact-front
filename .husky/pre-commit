@@ -1,11 +1,1 @@
-# Create .husky directory
-mkdir -p .husky
-
-# Create pre-commit file
-echo '#!/bin/sh' > .husky/pre-commit
-echo '. "$(dirname "$0")/_/husky.sh"' >> .husky/pre-commit
-echo '' >> .husky/pre-commit
-echo 'npm run quality' >> .husky/pre-commit
-
-# Make it executable (Git Bash on Windows)
-chmod +x .husky/pre-commit
+npm run quality
